@@ -7,6 +7,12 @@ class UserData extends Component {
         //this.getProduto();
     }
 
+    insertInformationSelected() {
+        document.getElementById("name").value = "William Camargo";
+        document.getElementById("tel").value = "(11) 96075-4257";
+        document.getElementById("email").value = "williamcamargosilva@gmail.com";
+    }
+
     clearInputText(){
         document.getElementById("name").value = "";
         document.getElementById("tel").value = "";
@@ -19,7 +25,7 @@ class UserData extends Component {
                 {/* <Header /> */}
                 <main className="container">
                     <div className="box-cad-user">   
-                        <h1>Cadastro de informações de Usuário</h1>
+                        <span>Cadastro de informações de Usuário</span>
                         <form className="form-Cad"> 
                             <label>Nome</label>
                             <input type="text" id="name" placeholder="digite seu nome aqui"/>
@@ -37,6 +43,24 @@ class UserData extends Component {
                             <a href="#">EXCLUIR</a>
                             <a href="#" onClick={() => this.clearInputText()}>LIMPAR</a>
                         </div>
+
+                        <span>Lista de Usuários Cadastrados</span>
+                        <table className="table-list">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Celular</th>
+                                <th>E-mail</th>
+                                <th></th>
+                            </tr>
+                            
+                            <tr>
+                                <td>William Camargo</td>
+                                <td>(11) 96075-4257</td>
+                                <td>williamcamargosilva@gmail.com</td>
+                                <td><a href="#" onClick={() => this.insertInformationSelected()}>SELECIONAR</a></td>
+                            </tr>
+                            
+                        </table>
                     </div>
 
                 </main>

@@ -22,6 +22,11 @@
 }
 
 /*#region USER*/
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .box-cad-user {
     margin: 2em 10em;
 }
@@ -32,7 +37,7 @@
     padding: 2em;
     border: 1px solid var(--border);
     border-radius: 5px;
-    margin-top: 2em;
+    margin: 2em 0;
 }
 
 .form-Cad label{
@@ -45,7 +50,7 @@
 }
 
 .btn-edition {
-    margin: 2em;
+    margin: 4em 0;
     text-align: center;
 
 }
@@ -62,6 +67,38 @@
 .btn-edition a:hover{
     background-color: var(--colorBtnHover);
 }
+
+td, th {
+    padding: 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-list {
+    margin: 3em 0;
+    padding: 2em;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.table-list a{
+    text-decoration: transparent;
+    background-color: var(--colorBtn);
+    padding: 8px 1em;
+    border-radius: 5px;
+    margin-right: 2em;
+    color: var(--colorBtnTxt);
+}
+
+.table-list a:hover{
+    background-color: var(--colorBtnHover);
+}
+
 /*#endregion*/
 
 

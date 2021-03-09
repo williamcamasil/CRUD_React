@@ -1,0 +1,1 @@
+create database userDatause userDatacreate table userTable (	stId int identity(1,1),	stName varchar(80),	stTel varchar(14),	stEmail varchar(50))insert into userTable values ('William Camargo da Silva', '(11)96075-4257', 'williamcamargosilva@gmail.com')select * from userTable
